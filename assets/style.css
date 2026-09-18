@@ -1,0 +1,271 @@
+/* Neumorphic / Soft UI Theme for Student Management System */
+
+:root {
+    --bg-primary: #f4f7f4;
+    --card-bg: #f7faf7;
+    --shadow-light: #ffffff;
+    --shadow-dark: #d5ded6;
+    --text-primary: #1e2922;
+    --text-muted: #5e7364;
+    --accent-olive: #4a6b52;
+    --accent-soft-green: #6fa07d;
+    --accent-light-green: #8cb898;
+    --badge-pass-bg: #e5f3e7;
+    --badge-pass-text: #2c663a;
+    --badge-fail-bg: #faeaea;
+    --badge-fail-text: #a13436;
+}
+
+/* Global container styling */
+.main {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Header Banner */
+.header-container {
+    background: #f7faf7;
+    border-radius: 20px;
+    padding: 24px 30px;
+    margin-bottom: 24px;
+    box-shadow: 6px 6px 16px var(--shadow-dark), -6px -6px 16px var(--shadow-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.header-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* Neumorphic KPI Cards */
+.kpi-card {
+    background: #f7faf7;
+    border-radius: 18px;
+    padding: 20px 18px;
+    box-shadow: 6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 8px 8px 18px var(--shadow-dark), -8px -8px 18px var(--shadow-light);
+}
+
+.kpi-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.kpi-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.kpi-trend {
+    font-size: 11px;
+    margin-top: 6px;
+    color: var(--accent-olive);
+    font-weight: 500;
+}
+
+/* Chart Container Cards */
+.chart-box {
+    background: #f7faf7;
+    border-radius: 20px;
+    padding: 20px 20px 12px 20px;
+    box-shadow: 6px 6px 15px var(--shadow-dark), -6px -6px 15px var(--shadow-light);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+}
+
+.chart-header {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chart-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+/* Student Profile Cards */
+.student-card {
+    background: #f7faf7;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 5px 5px 12px var(--shadow-dark), -5px -5px 12px var(--shadow-light);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+}
+
+.student-card:hover {
+    box-shadow: 7px 7px 16px var(--shadow-dark), -7px -7px 16px var(--shadow-light);
+}
+
+.student-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e3ebe4;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.student-card-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.student-card-id {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.student-info-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: var(--text-muted);
+}
+
+.student-info-row strong {
+    color: var(--text-primary);
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-pass {
+    background-color: var(--badge-pass-bg);
+    color: var(--badge-pass-text);
+    border: 1px solid #c7e5ce;
+}
+
+.badge-fail {
+    background-color: var(--badge-fail-bg);
+    color: var(--badge-fail-text);
+    border: 1px solid #f2c7c7;
+}
+
+.badge-pill {
+    background-color: #e9efe9;
+    color: var(--text-muted);
+    border-radius: 10px;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Individual Student Detail Banner */
+.profile-banner {
+    background: #f7faf7;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 6px 6px 16px var(--shadow-dark), -6px -6px 16px var(--shadow-light);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: 24px;
+}
+
+/* Soft Neumorphic Inset Containers */
+.inset-panel {
+    background: #eff4f0;
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: inset 2px 2px 5px var(--shadow-dark), inset -2px -2px 5px var(--shadow-light);
+    margin-top: 10px;
+}
+
+/* Streamlit button overrides for Neumorphic feel */
+div.stButton > button {
+    border-radius: 12px !important;
+    background: #f7faf7 !important;
+    color: var(--text-primary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 4px 4px 10px var(--shadow-dark), -4px -4px 10px var(--shadow-light) !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+div.stButton > button:hover {
+    box-shadow: 2px 2px 6px var(--shadow-dark), -2px -2px 6px var(--shadow-light) !important;
+    transform: translateY(1px) !important;
+    color: var(--accent-olive) !important;
+}
+
+div.stButton > button:active {
+    box-shadow: inset 2px 2px 5px var(--shadow-dark), inset -2px -2px 5px var(--shadow-light) !important;
+}
+
+/* Primary buttons */
+div.stButton > button[kind="primary"] {
+    background: #52795d !important;
+    color: #ffffff !important;
+    border: 1px solid #45684e !important;
+    box-shadow: 4px 4px 10px rgba(82, 121, 93, 0.35), -3px -3px 8px var(--shadow-light) !important;
+}
+
+div.stButton > button[kind="primary"]:hover {
+    background: #46684f !important;
+    color: #ffffff !important;
+}
+
+/* Input Fields soft styling */
+div[data-baseweb="input"] > div {
+    background-color: #f7faf7 !important;
+    border-radius: 12px !important;
+    border: 1px solid #dce5dd !important;
+    box-shadow: inset 1px 1px 4px var(--shadow-dark), inset -1px -1px 4px var(--shadow-light) !important;
+}
+
+div[data-baseweb="select"] > div {
+    background-color: #f7faf7 !important;
+    border-radius: 12px !important;
+    border: 1px solid #dce5dd !important;
+    box-shadow: inset 1px 1px 4px var(--shadow-dark), inset -1px -1px 4px var(--shadow-light) !important;
+}
